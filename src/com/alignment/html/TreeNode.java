@@ -13,7 +13,7 @@ import com.google.common.collect.Sets;
 
 
 /**
- * A tree implementation for serializable objects. The value of the node cannot
+ * A tree implementation for {@code Serializable} objects. The value of the node cannot
  * be null. The child of the node will be null if we are at the root and the
  * parent of the node will be null if we are at the head.
  * 
@@ -75,7 +75,7 @@ public class TreeNode<T extends Serializable> implements Serializable {
 	 * 
 	 * @return The non-null value associated with this tree node.
 	 */
-	public Object getValue() {
+	public T getValue() {
 		return value;
 	}
 
